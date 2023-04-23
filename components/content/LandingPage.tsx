@@ -23,7 +23,7 @@ const LandingPage: React.FC<{}> = () => {
                         </div>
                         <h1 className={`text-white text-title ${inter.className}`}>A <span className="text-primary">Tall Dark Frontend Developer</span> based from Philippines.</h1>
                         <p className="text-grey text-2xl text-justify">
-                            I am excited to showcase my portfolio, which reflects my passion for web development and my commitment to excellence. I am ready to take on new challenges and create innovative web solutions that make a meaningful impact. Let's collaborate and bring your vision to life!
+                            I am excited to showcase my portfolio, which reflects my passion for web development and my commitment to excellence. I am ready to take on new challenges and create innovative web solutions that make a meaningful impact. Let&apos;s collaborate and bring your vision to life!
                         </p>
                         <div className="mt-3"><button className="bg-transparent border-4 border-primary px-5 py-3 flex justify-center gap-2 items-center text-[#f2a93c] text-xl " ><IonIcon className='stroke-current text-[#f2a93c] text-xl' icon={mail} /> renzowensantillan@gmail.com</button></div>
                     </div>

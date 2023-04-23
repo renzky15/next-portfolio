@@ -38,7 +38,7 @@ const NavHeader: React.FC<Props> = (props) => {
                 <div className="flex items-center">
                     {
                         menu.map((nav:any, index:number) => (
-                            <button onClick={() => navClickHandler(nav.path, index)} className={`${activeTab === index ? 'bg-[#323232]': ''} h-full text-white px-5 rounded-t-xl text-sm flex items-center gap-2`}>
+                            <button key={index} onClick={() => navClickHandler(nav.path, index)} className={`${activeTab === index ? 'bg-[#323232]': ''} h-full text-white px-5 rounded-t-xl text-sm flex items-center gap-2`}>
                                 <IonIcon className="stroke-current text-white text-lg" icon={earth} /> {nav.title}
                             </button>
                             )
