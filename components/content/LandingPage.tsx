@@ -21,7 +21,7 @@ const LandingPage: React.FC<{}> = () => {
                                 <h1 className="text-title text-primary">Renz Owen Santillan</h1>
                             </div>
                         </div>
-                        <h1 className={`text-white text-title ${inter.className}`}>A <span className="text-primary">Tall Dark Frontend Developer</span> based from Philippines.</h1>
+                        <h1 className={`text-white text-title ${inter.className}`}>A <span className="text-primary">Front-end Developer</span> specializing in JavaScript frameworks.</h1>
                         <p className="text-grey text-2xl text-justify">
                             I am excited to showcase my portfolio, which reflects my passion for web development and my commitment to excellence. I am ready to take on new challenges and create innovative web solutions that make a meaningful impact. Let&apos;s collaborate and bring your vision to life!
                         </p>

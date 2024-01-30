@@ -5,6 +5,7 @@ const nextConfig = {
     if (isServer) {
       config.externals.push('@react-pdf/renderer');
     }
+    config.resolve.alias.canvas = false;
 
     return config;
   },
