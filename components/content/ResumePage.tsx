@@ -47,7 +47,7 @@ const ResumePage: React.FC<{}> = () => {
         renderMode: 'canvas'
     };
 
-    const [numPages, setNumPages] = useState<number>();
+    const [numPages, setNumPages] = useState<number>(3);
     const [pageNumber, setPageNumber] = useState<number>(1);
 
     function onDocumentLoadSuccess({ numPages }: { numPages: number }): void {
