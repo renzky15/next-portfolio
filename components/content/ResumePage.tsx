@@ -47,15 +47,36 @@ const ResumePage: React.FC<{}> = () => {
         renderMode: 'canvas'
     };
 
+    const [numPages, setNumPages] = useState<number>();
+    const [pageNumber, setPageNumber] = useState<number>(1);
+
+    function onDocumentLoadSuccess({ numPages }: { numPages: number }): void {
+        setNumPages(numPages);
+    }
+
+    const nextHandler = () => {
+        if (pageNumber < numPages) {
+            setPageNumber(pageNumber + 1);
+        }
+    }
+    const prevHandler = () => {
+        setPageNumber(pageNumber - 1);
+    }
+
 
     return (
         <>
             <div className="content flex justify-center">
-                <div className="w-6/12">
-                    <Document options={options} file="/static/pdf/resume.docx.pdf" >
-                        <Page scale={1.2} pageNumber={1} />
+                <div className="w-8/12">
+                    <Document className="text-white" options={options} file="/static/pdf/CV-RenzOwenSantillan.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+                        <Page scale={1.2} pageNumber={pageNumber} />
                     </Document>
+                    <div className="w-full flex items-center gap-5 justify-center">
+                        <button disabled={pageNumber === 1 } className={`${pageNumber === 1 ? 'text-[#d3d3d3]' : ''} text-white`} onClick={prevHandler}>Prev</button>
+                        <button className="text-white" onClick={nextHandler}>Next</button>
+                    </div>
                 </div>
+
             </div>
         </>
     );
