@@ -32,8 +32,29 @@ const projects = [
     id: 4,
     image: "/static/img/work3.png",
     url: "https://trial-app-rho.vercel.app/",
-    name: "Figma to HTML 1",
+    name: "Figma to HTML",
     description: "Figma to HTML created by NextJS",
+  },
+  {
+    id: 5,
+    image: "/static/img/work7.png",
+    url: "https://track-ed.vercel.app/",
+    name: "TrackEd",
+    description: "Simple feedback website for Senior High School Research",
+  },
+  {
+    id: 6,
+    image: "/static/img/work8.png",
+    url: "https://assessment-rigo.vercel.app/",
+    name: "Website",
+    description: "Figma to HTML",
+  },
+  {
+    id: 7,
+    image: "/static/img/work4.png",
+    url: "https://assessment-rigo.vercel.app/",
+    name: "Clone Netflix",
+    description: "Practice Project",
   },
 ];
 const WorkPage: React.FC<{}> = () => {
@@ -44,7 +65,7 @@ const WorkPage: React.FC<{}> = () => {
   };
   return (
     <>
-      <div className="content grid grid-cols-3 gap-10">
+      <div className="content grid xl:grid-cols-4 md:grid-cols-3 gap-10">
         {projects.map((project, index) => (
           <button
             className="h-full"
