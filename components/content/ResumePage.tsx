@@ -79,7 +79,7 @@ const ResumePage: React.FC<{}> = () => {
           <Document
             className="text-white"
             options={options}
-            file="/static/pdf/CV-RenzOwenSantillan-2025.pdf"
+            file="/static/pdf/CV-RenzOwenSantillan.pdf"
             onLoadSuccess={onDocumentLoadSuccess}
           >
             <Page scale={1.2} pageNumber={pageNumber} />
